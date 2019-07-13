@@ -8,4 +8,6 @@ Built with
 - redux
 - material-ui
 
+A link will be put here when the app is published.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

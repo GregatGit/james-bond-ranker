@@ -40,7 +40,7 @@ export const actors = {
 export const movies = {
   j1_1: {
     id: 'j1_1',
-    name: 'Dr. No',
+    title: 'Dr. No',
     year: 1962,
     bond: 'j1',
     number: 1,
@@ -49,7 +49,7 @@ export const movies = {
   },
   j1_2: {
     id: 'j1_2',
-    name: 'From Russia with Love',
+    title: 'From Russia with Love',
     year: 1963,
     bond: 'j1',
     number: 2,
@@ -58,7 +58,7 @@ export const movies = {
   },
   j1_3: {
     id: 'j1_3',
-    name: 'Goldfinger',
+    title: 'Goldfinger',
     year: 1964,
     bond: 'j1_1',
     number: 3,
@@ -67,7 +67,7 @@ export const movies = {
   },
   j1_4: {
     id: 'j1_4',
-    name: 'Thunderball',
+    title: 'Thunderball',
     year: 1965,
     bond: 'j1',
     number: 4,
@@ -76,7 +76,7 @@ export const movies = {
   },
   j1_5: {
     id: 'j1_5',
-    name: 'You Only Live Twice',
+    title: 'You Only Live Twice',
     year: 1967,
     bond: 'j1',
     number: 5,
@@ -86,7 +86,7 @@ export const movies = {
 
   j2_1: {
     id: 'j2_1',
-    name: "On Her Majesty's Secret Service",
+    title: "On Her Majesty's Secret Service",
     year: 1969,
     bond: 'j2',
     number: 6,
@@ -95,7 +95,7 @@ export const movies = {
   },
   j1_6: {
     id: 'j1_6',
-    name: `Diamonds Are Forever`,
+    title: `Diamonds Are Forever`,
     year: 1971,
     bond: 'j1',
     number: 7,
@@ -104,7 +104,7 @@ export const movies = {
   },
   j3_1: {
     id: 'j3_1',
-    name: 'Live and Let Die',
+    title: 'Live and Let Die',
     year: 1973,
     bond: 'j3',
     number: 8,
@@ -113,7 +113,7 @@ export const movies = {
   },
   j3_2: {
     id: 'j3_2',
-    name: `The Man with the Golden Gun`,
+    title: `The Man with the Golden Gun`,
     year: 1974,
     bond: 'j3',
     number: 9,
@@ -122,7 +122,7 @@ export const movies = {
   },
   j3_3: {
     id: 'j3_3',
-    name: `The Spy Who Loved Me`,
+    title: `The Spy Who Loved Me`,
     year: 1977,
     bond: 'j3',
     number: 10,
@@ -131,7 +131,7 @@ export const movies = {
   },
   j3_4: {
     id: 'j3_4',
-    name: `Moonraker`,
+    title: `Moonraker`,
     year: 1979,
     bond: 'j3',
     number: 11,
@@ -140,7 +140,7 @@ export const movies = {
   },
   j3_5: {
     id: 'j3_5',
-    name: 'For Your Eyes Only',
+    title: 'For Your Eyes Only',
     year: 1981,
     bond: 'j3',
     number: 12,
@@ -149,7 +149,7 @@ export const movies = {
   },
   j3_6: {
     id: 'j3_6',
-    name: `Octopussy`,
+    title: `Octopussy`,
     year: 1983,
     bond: 'j3',
     number: 13,
@@ -158,7 +158,7 @@ export const movies = {
   },
   j1_7: {
     id: 'j1_7',
-    name: `Never Say Never Again`,
+    title: `Never Say Never Again`,
     year: 1983,
     bond: 'j',
     number: 14,
@@ -167,7 +167,7 @@ export const movies = {
   },
   j3_7: {
     id: 'j3_7',
-    name: `A View to a Kill`,
+    title: `A View to a Kill`,
     year: 1987,
     bond: 'j3',
     number: 15,
@@ -177,7 +177,7 @@ export const movies = {
 
   j4_1: {
     id: 'j4_1',
-    name: `The Living Daylights`,
+    title: `The Living Daylights`,
     year: 1987,
     bond: 'j3',
     number: 16,
@@ -186,7 +186,7 @@ export const movies = {
   },
   j4_2: {
     id: 'j4_2',
-    name: `Licence to Kill`,
+    title: `Licence to Kill`,
     year: 1989,
     bond: 'j4',
     number: 17,
@@ -195,7 +195,7 @@ export const movies = {
   },
   j5_1: {
     id: 'j5_1',
-    name: `GoldenEye`,
+    title: `GoldenEye`,
     year: 1995,
     bond: 'j5',
     number: 18,
@@ -204,7 +204,7 @@ export const movies = {
   },
   j5_2: {
     id: 'j5_2',
-    name: `Tomorrow Never Dies`,
+    title: `Tomorrow Never Dies`,
     year: 1997,
     bond: 'j5',
     number: 19,
@@ -213,7 +213,7 @@ export const movies = {
   },
   j5_3: {
     id: 'j5_3',
-    name: `The World Is Not Enough`,
+    title: `The World Is Not Enough`,
     year: 1999,
     bond: 'j5',
     number: 20,
@@ -222,7 +222,7 @@ export const movies = {
   },
   j5_4: {
     id: 'j5_4',
-    name: `Die Another Day`,
+    title: `Die Another Day`,
     year: 2002,
     bond: 'j5',
     number: 21,
@@ -231,7 +231,7 @@ export const movies = {
   },
   j6_1: {
     id: 'j6_1',
-    name: `Casino Royale`,
+    title: `Casino Royale`,
     year: 2006,
     bond: 'j6',
     number: 22,
@@ -240,7 +240,7 @@ export const movies = {
   },
   j6_2: {
     id: 'j6_2',
-    name: `Quantum of Solace`,
+    title: `Quantum of Solace`,
     year: 2008,
     bond: 'j6',
     number: 23,
@@ -249,7 +249,7 @@ export const movies = {
   },
   j6_3: {
     id: 'j6_3',
-    name: `Skyfall`,
+    title: `Skyfall`,
     year: 2012,
     bond: 'j6',
     number: 24,
@@ -258,7 +258,7 @@ export const movies = {
   },
   j6_4: {
     id: 'j6_4',
-    name: `Spectre`,
+    title: `Spectre`,
     year: 2015,
     bond: 'j6',
     number: 25,

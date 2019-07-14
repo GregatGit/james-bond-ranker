@@ -1,9 +1,11 @@
 import React from 'react'
+import AllMovies from './components/AllMovies'
 
 function App() {
   return (
-    <div className="App">
+    <div >
       James Bond Ranker
+    <AllMovies />
     </div>
   )
 }

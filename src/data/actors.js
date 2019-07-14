@@ -1,5 +1,4 @@
-const movies = {
-  
+const movies = { 
 j1_1: {
   id: 'j1_1',
   name: 'Dr. No',

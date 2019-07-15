@@ -37,8 +37,8 @@ export const actors = {
   },
 }
 
-export const movies = {
-  j1_1: {
+export const movies = [
+  {
     id: 'j1_1',
     title: 'Dr. No',
     year: 1962,
@@ -47,7 +47,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMTk4YzdjOTgtNjM4NS00YjljLThhM2QtYTI3OTQ0OGVhNTMxXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: ``,
   },
-  j1_2: {
+  {
     id: 'j1_2',
     title: 'From Russia with Love',
     year: 1963,
@@ -56,16 +56,16 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMTQxNTIzMTExN15BMl5BanBnXkFtZTcwODI4MDgzNA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: ``,
   },
-  j1_3: {
+  {
     id: 'j1_3',
     title: 'Goldfinger',
     year: 1964,
-    bond: 'j1_1',
+    bond: 'j1',
     number: 3,
     img: `https://m.media-amazon.com/images/M/MV5BMTQ2MzE0OTU3NV5BMl5BanBnXkFtZTcwNjQxNTgzNA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: ``,
   },
-  j1_4: {
+  {
     id: 'j1_4',
     title: 'Thunderball',
     year: 1965,
@@ -74,7 +74,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BZGNhYjM3ZmQtMTRlZS00YmZiLWFhYjktYWE3ZTk0MGY0MTIwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: ``,
   },
-  j1_5: {
+  {
     id: 'j1_5',
     title: 'You Only Live Twice',
     year: 1967,
@@ -84,7 +84,7 @@ export const movies = {
     imgLarge: ``,
   },
 
-  j2_1: {
+  {
     id: 'j2_1',
     title: "On Her Majesty's Secret Service",
     year: 1969,
@@ -93,7 +93,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMTc0NDYzMjgyNV5BMl5BanBnXkFtZTcwMjgyMzY0NA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: ``,
   },
-  j1_6: {
+  {
     id: 'j1_6',
     title: `Diamonds Are Forever`,
     year: 1971,
@@ -102,7 +102,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMTM0MDI2MzYzOF5BMl5BanBnXkFtZTcwNDY4NTMzNA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: ``,
   },
-  j3_1: {
+  {
     id: 'j3_1',
     title: 'Live and Let Die',
     year: 1973,
@@ -111,7 +111,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMzY0M2MzODYtZDU5Yy00YTg2LWJmMGQtNmY1OWZiYjlmNzY0XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BMjI2NTY5MTYzMl5BMl5BanBnXkFtZTcwNzY5MDg0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
-  j3_2: {
+  {
     id: 'j3_2',
     title: `The Man with the Golden Gun`,
     year: 1974,
@@ -120,7 +120,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BYjY3YmM1MTItMWE0NC00NjFmLWFkMDgtMWFiZjY5NzQyZGVjXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgL: `https://m.media-amazon.com/images/M/MV5BODg3NjQ0MjMwN15BMl5BanBnXkFtZTcwNTY5MDg0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
-  j3_3: {
+  {
     id: 'j3_3',
     title: `The Spy Who Loved Me`,
     year: 1977,
@@ -129,7 +129,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BNDk3ODM2NDgtMGE3Ni00ZGVhLTk2ZTctN2JkMDVkMmRhNDQ5XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BMjI1MTA5NDE1NF5BMl5BanBnXkFtZTcwMDIzMzY0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
-  j3_4: {
+  {
     id: 'j3_4',
     title: `Moonraker`,
     year: 1979,
@@ -138,7 +138,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMjQyMjUyNzY4MF5BMl5BanBnXkFtZTcwNzIyMzY0NA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BYzUzNjFjYjQtZDE1ZS00ZDczLTgyYTAtMDE1OGZjNzJlOTk4XkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_SY1000_CR0,0,736,1000_AL_.jpg`,
   },
-  j3_5: {
+  {
     id: 'j3_5',
     title: 'For Your Eyes Only',
     year: 1981,
@@ -147,7 +147,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BOTNmMmUwNDctNjQ1OC00NzAwLThkM2QtN2MzOWE0OWU1MmJiXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BOTEwNzY5OTgyNl5BMl5BanBnXkFtZTcwMDAxNzczNA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
-  j3_6: {
+  {
     id: 'j3_6',
     title: `Octopussy`,
     year: 1983,
@@ -156,7 +156,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMjI2MDE0NjE1NV5BMl5BanBnXkFtZTcwNjYyMzY0NA@@._V1.._UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BMjI2MDE0NjE1NV5BMl5BanBnXkFtZTcwNjYyMzY0NA@@._V1.._SY1000_CR0,0,666,1000_AL_.jpg`,
   },
-  j1_7: {
+  {
     id: 'j1_7',
     title: `Never Say Never Again`,
     year: 1983,
@@ -165,7 +165,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMTM1NjgzMDkwOF5BMl5BanBnXkFtZTcwMzM4NzI0NA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BMTM1NjgzMDkwOF5BMl5BanBnXkFtZTcwMzM4NzI0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
-  j3_7: {
+  {
     id: 'j3_7',
     title: `A View to a Kill`,
     year: 1987,
@@ -175,7 +175,7 @@ export const movies = {
     imgLarge: `https://m.media-amazon.com/images/M/MV5BMTMwMTYzOTIwM15BMl5BanBnXkFtZTcwODY5MDg0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
 
-  j4_1: {
+  {
     id: 'j4_1',
     title: `The Living Daylights`,
     year: 1987,
@@ -184,7 +184,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BZjI4MjBmYzItYTY5OC00OWYzLWE0NWYtZDQxNDQxM2QzYjA4XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BOTg2MDUzNDIxMV5BMl5BanBnXkFtZTcwNjY5MDg0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
-  j4_2: {
+  {
     id: 'j4_2',
     title: `Licence to Kill`,
     year: 1989,
@@ -193,7 +193,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BODY3M2I0NGItYzJhNy00M2NiLThhMDgtNjZkNjA1NTQzMDM4XkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BMTY0NDE2MTAzN15BMl5BanBnXkFtZTcwMjY5MDg0NA@@._V1._CR21,14,639,990_.jpg`,
   },
-  j5_1: {
+  {
     id: 'j5_1',
     title: `GoldenEye`,
     year: 1995,
@@ -202,7 +202,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMzk2OTg4MTk1NF5BMl5BanBnXkFtZTcwNjExNTgzNA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BMzk2OTg4MTk1NF5BMl5BanBnXkFtZTcwNjExNTgzNA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
-  j5_2: {
+  {
     id: 'j5_2',
     title: `Tomorrow Never Dies`,
     year: 1997,
@@ -211,7 +211,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMTM1MTk2ODQxNV5BMl5BanBnXkFtZTcwOTY5MDg0NA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BMTM1MTk2ODQxNV5BMl5BanBnXkFtZTcwOTY5MDg0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
-  j5_3: {
+  {
     id: 'j5_3',
     title: `The World Is Not Enough`,
     year: 1999,
@@ -220,7 +220,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMjA0MzUyNjg0MV5BMl5BanBnXkFtZTcwNDY5MDg0NA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BMjA0MzUyNjg0MV5BMl5BanBnXkFtZTcwNDY5MDg0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
-  j5_4: {
+  {
     id: 'j5_4',
     title: `Die Another Day`,
     year: 2002,
@@ -229,7 +229,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BODNkYmIwYTMtYzdhNy00YWE3LThkYmEtNzA5ZTE5YmVjYzZlXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BODNkYmIwYTMtYzdhNy00YWE3LThkYmEtNzA5ZTE5YmVjYzZlXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SY1000_SX668_AL_.jpg`,
   },
-  j6_1: {
+  {
     id: 'j6_1',
     title: `Casino Royale`,
     year: 2006,
@@ -238,7 +238,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMDI5ZWJhOWItYTlhOC00YWNhLTlkNzctNDU5YTI1M2E1MWZhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BM2QzN2I4OWEtNWRkMC00NWZhLTlmNmYtODEwOTY2MDA2YjMzXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SY1000_CR0,0,674,1000_AL_.jpg`,
   },
-  j6_2: {
+  {
     id: 'j6_2',
     title: `Quantum of Solace`,
     year: 2008,
@@ -247,7 +247,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BMjZiYTUzMzktZWI5Yy00Mzk4LWFlMDgtYjRmNWU0Mzc0MzNiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BMjZiYTUzMzktZWI5Yy00Mzk4LWFlMDgtYjRmNWU0Mzc0MzNiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SY1000_CR0,0,672,1000_AL_.jpg`,
   },
-  j6_3: {
+  {
     id: 'j6_3',
     title: `Skyfall`,
     year: 2012,
@@ -256,7 +256,7 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BNDVhZmJiYWMtNmIzMC00ZWNiLTkzZDYtNGNlZmViMGM4OGExXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BZGUzYjA3Y2ItZTMxYi00NDE2LTkxY2UtMDdhYTU2NjVkNWYwXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_SY1000_CR0,0,700,1000_AL_.jpg`,
   },
-  j6_4: {
+  {
     id: 'j6_4',
     title: `Spectre`,
     year: 2015,
@@ -265,4 +265,4 @@ export const movies = {
     img: `https://m.media-amazon.com/images/M/MV5BOWQ1MDE1NzgtNTQ4OC00ZjliLTllZDAtN2IyOTVmMTc5YjUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BOWQ1MDE1NzgtNTQ4OC00ZjliLTllZDAtN2IyOTVmMTc5YjUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,675,1000_AL_.jpg`,
   },
-}
+]

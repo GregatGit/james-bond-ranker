@@ -25,8 +25,8 @@ const useStyles = makeStyles(theme => ({
     color: 'rgba(255, 255, 255, 0.54)',
   },
   img: {
-    height: 120,
-    width: 80,
+  
+    width: 120,
   }
 }))
 
@@ -40,11 +40,11 @@ function AllMovies({movies}) {
         <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
           <ListSubheader component="div">December</ListSubheader>
         </GridListTile>
-        {movieList.map(movie => (
-          <GridListTile key={movies[movie].img}>
-            <img className={classes.img} src={movies[movie].img} alt={movies[movie].title} />
+        {movies.map(movie => (
+          <GridListTile key={movie.img}>
+            <img className={classes.img} src={movie.img} alt={movie.title} />
             <GridListTileBar
-              title={movies[movie].title}
+              title={movie.title}
               subtitle={<span></span>}
               actionIcon={
                 <IconButton className={classes.icon}>

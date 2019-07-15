@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { makeStyles } from '@material-ui/core/styles'
-import _ from 'lodash'
 import GridList from '@material-ui/core/GridList'
 import GridListTile from '@material-ui/core/GridListTile'
 import GridListTileBar from '@material-ui/core/GridListTileBar'
@@ -21,31 +20,35 @@ const useStyles = makeStyles(theme => ({
     width: 500,
     height: 850,
   },
+  gridListTitleBar: {
+    opacity: 0,
+    '&:hover': {
+      opacity: 1
+    },
+  },
   icon: {
     color: 'rgba(255, 255, 255, 0.54)',
   },
   img: {
-  
     width: 120,
-  }
+  },
 }))
 
-function AllMovies({movies}) {
+function AllMovies({ movies, actors }) {
   const classes = useStyles()
-  const movieList = _.keys(movies) // arr of all movies ids
-  console.log('movieList: ', movieList)
   return (
-  <div className={classes.root}>
-  <GridList cellHeight={180} className={classes.gridList}>
+    <div className={classes.root}>
+      <GridList cellHeight={180} className={classes.gridList}>
         <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
-          <ListSubheader component="div">December</ListSubheader>
+          <ListSubheader component="div">Bond Movies</ListSubheader>
         </GridListTile>
-        {movies.map(movie => (
-          <GridListTile key={movie.img}>
-            <img className={classes.img} src={movie.img} alt={movie.title} />
+        {movies.map(({ img, title, bond}) => (
+          <GridListTile key={img}>
+            <img className={classes.img} src={img} alt={title} />
             <GridListTileBar
-              title={movie.title}
-              subtitle={<span></span>}
+              className={classes.gridListTitleBar}
+              title={title}
+              subtitle={<span>{actors[bond].name}</span>}
               actionIcon={
                 <IconButton className={classes.icon}>
                   <InfoIcon />
@@ -55,13 +58,13 @@ function AllMovies({movies}) {
           </GridListTile>
         ))}
       </GridList>
-  
-  </div>)
+    </div>
+  )
 }
 const mapStateToProps = (state, ownProps) => {
   return {
     movies: state.movies,
-    actors: state.actors
+    actors: state.actors,
   }
 }
 export default connect(mapStateToProps)(AllMovies)

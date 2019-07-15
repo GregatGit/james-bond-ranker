@@ -160,7 +160,7 @@ export const movies = [
     id: 'j1_7',
     title: `Never Say Never Again`,
     year: 1983,
-    bond: 'j',
+    bond: 'j1',
     number: 14,
     img: `https://m.media-amazon.com/images/M/MV5BMTM1NjgzMDkwOF5BMl5BanBnXkFtZTcwMzM4NzI0NA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
     imgLarge: `https://m.media-amazon.com/images/M/MV5BMTM1NjgzMDkwOF5BMl5BanBnXkFtZTcwMzM4NzI0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,

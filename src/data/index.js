@@ -45,7 +45,10 @@ export const movies = [
     bond: 'j1',
     number: 1,
     img: `https://m.media-amazon.com/images/M/MV5BMTk4YzdjOTgtNjM4NS00YjljLThhM2QtYTI3OTQ0OGVhNTMxXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg`,
-    imgLarge: ``,
+    review: `Dr. No. The 1961 film catapulted Ian Fleming’s James Bond into stratosphere and taking Sean Connery for the ride. The stars aligned with director, script, leading lady, locations, action and Monty Norman brilliant Bond theme. As good as the film is gets extra credit for being the first.`,
+    rating: 4,
+    Blofeld: false,
+    imgLarge: `https://m.media-amazon.com/images/M/MV5BOTU3NzExMTQ4N15BMl5BanBnXkFtZTcwMjkzNzQzNA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`
   },
   {
     id: 'j1_2',
@@ -54,7 +57,10 @@ export const movies = [
     bond: 'j1',
     number: 2,
     img: `https://m.media-amazon.com/images/M/MV5BMTQxNTIzMTExN15BMl5BanBnXkFtZTcwODI4MDgzNA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
-    imgLarge: ``,
+    review: `Not bad for a second outing that keeps the sense of adventure and wonder going. We get our first look at fan favourite Desmond Llewelyn as Q, who goes on to appear in more Bond films than any other actor. The film starts to bring out the wacky stereotypes like the Russian henchwoman who talks in a harsh German ascent and slaps her horse whip to emphasis her willingness to kill for minor infractions. The biggest flaw of the film is the overuse of the Bond theme. Even simple tasks such as checking out his hotel room gets the full orchestra.`,
+    rating: 3,
+    imgLarge: `https://m.media-amazon.com/images/M/MV5BMTQxNTIzMTExN15BMl5BanBnXkFtZTcwODI4MDgzNA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
+    Blofeld: `Anthony Dawson`
   },
   {
     id: 'j1_3',
@@ -63,7 +69,7 @@ export const movies = [
     bond: 'j1',
     number: 3,
     img: `https://m.media-amazon.com/images/M/MV5BMTQ2MzE0OTU3NV5BMl5BanBnXkFtZTcwNjQxNTgzNA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
-    imgLarge: ``,
+    imgLarge: `https://m.media-amazon.com/images/M/MV5BMTQ2MzE0OTU3NV5BMl5BanBnXkFtZTcwNjQxNTgzNA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
   {
     id: 'j1_4',
@@ -72,7 +78,7 @@ export const movies = [
     bond: 'j1',
     number: 4,
     img: `https://m.media-amazon.com/images/M/MV5BZGNhYjM3ZmQtMTRlZS00YmZiLWFhYjktYWE3ZTk0MGY0MTIwXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg`,
-    imgLarge: ``,
+    imgLarge: `https://m.media-amazon.com/images/M/MV5BMTY1Mjc2MTYxNV5BMl5BanBnXkFtZTcwNzUzMzY3NA@@._V1_SY1000_CR0,0,661,1000_AL_.jpg`,
   },
   {
     id: 'j1_5',
@@ -81,7 +87,7 @@ export const movies = [
     bond: 'j1',
     number: 5,
     img: `https://m.media-amazon.com/images/M/MV5BZWU0MzNlZTUtNGIxYi00NzFiLWJkOTMtMzRlYmQxN2RlZmZjXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg`,
-    imgLarge: ``,
+    imgLarge: `https://m.media-amazon.com/images/M/MV5BMTk4NTU2Mzk1OV5BMl5BanBnXkFtZTcwMzY5MDg0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
 
   {
@@ -91,7 +97,9 @@ export const movies = [
     bond: 'j2',
     number: 6,
     img: `https://m.media-amazon.com/images/M/MV5BMTc0NDYzMjgyNV5BMl5BanBnXkFtZTcwMjgyMzY0NA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
-    imgLarge: ``,
+    imgLarge: `https://m.media-amazon.com/images/M/MV5BMTc0NDYzMjgyNV5BMl5BanBnXkFtZTcwMjgyMzY0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
+    rating: 4,
+    Blofeld: `Telly Savalas`
   },
   {
     id: 'j1_6',
@@ -100,7 +108,7 @@ export const movies = [
     bond: 'j1',
     number: 7,
     img: `https://m.media-amazon.com/images/M/MV5BMTM0MDI2MzYzOF5BMl5BanBnXkFtZTcwNDY4NTMzNA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
-    imgLarge: ``,
+    imgLarge: `https://m.media-amazon.com/images/M/MV5BMjQwZTBkNmItZTAwYi00OGJjLTllMjQtNzI4ZjRhYmRjMDZlXkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_SY1000_CR0,0,753,1000_AL_.jpg`,
   },
   {
     id: 'j3_1',
@@ -118,7 +126,7 @@ export const movies = [
     bond: 'j3',
     number: 9,
     img: `https://m.media-amazon.com/images/M/MV5BYjY3YmM1MTItMWE0NC00NjFmLWFkMDgtMWFiZjY5NzQyZGVjXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg`,
-    imgL: `https://m.media-amazon.com/images/M/MV5BODg3NjQ0MjMwN15BMl5BanBnXkFtZTcwNTY5MDg0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
+    imgLarge: `https://m.media-amazon.com/images/M/MV5BODg3NjQ0MjMwN15BMl5BanBnXkFtZTcwNTY5MDg0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
   {
     id: 'j3_3',

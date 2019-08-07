@@ -1,13 +1,41 @@
 import React from 'react'
-import AllMovies from './components/AllMovies'
+import { Paper, makeStyles, Grid } from '@material-ui/core/'
+import { connect } from 'react-redux'
 
-function App() {
+import AllMovies from './components/AllMovies'
+import MovieChosen from './components/MovieChosen'
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+}))
+
+function App({ movie }) {
+  const classes = useStyles()
   return (
-    <div >
-      James Bond Ranker
-    <AllMovies />
+    <div className={classes.root}>
+      <Grid container spacing={3}>
+        <Grid item sm>
+          <MovieChosen chosen={movie}/>
+        </Grid>
+        <Grid item sm>
+          <Paper className={classes.paper}>
+            <AllMovies />
+          </Paper>
+        </Grid>
+      </Grid>
     </div>
   )
 }
-
-export default App
+const mapStateToProps = (state, ownProps) => {
+  return {
+    movie: state.movie
+  }
+}
+export default connect(mapStateToProps)(App)

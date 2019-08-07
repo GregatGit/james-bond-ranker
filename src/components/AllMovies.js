@@ -7,6 +7,7 @@ import GridListTileBar from '@material-ui/core/GridListTileBar'
 import ListSubheader from '@material-ui/core/ListSubheader'
 import IconButton from '@material-ui/core/IconButton'
 import InfoIcon from '@material-ui/icons/Info'
+import { movieSelected } from '../actions'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -18,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   },
   gridList: {
     width: 500,
-    height: 850,
+    height: 750,
   },
   gridListTitleBar: {
     opacity: 0,
@@ -34,7 +35,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-function AllMovies({ movies, actors }) {
+function AllMovies({ movies, actors, movieSelected }) {
   const classes = useStyles()
   return (
     <div className={classes.root}>
@@ -42,13 +43,13 @@ function AllMovies({ movies, actors }) {
         <GridListTile key="Subheader" cols={2} style={{ height: 'auto' }}>
           <ListSubheader component="div">Bond Movies</ListSubheader>
         </GridListTile>
-        {movies.map(({ img, title, bond}) => (
-          <GridListTile key={img}>
-            <img className={classes.img} src={img} alt={title} />
+        {movies.map((movie) => (
+          <GridListTile key={movie.img}>
+            <img onClick={()=> movieSelected(movie)} className={classes.img} src={movie.img} alt={movie.title} />
             <GridListTileBar
               className={classes.gridListTitleBar}
-              title={title}
-              subtitle={<span>{actors[bond].name}</span>}
+              title={movie.title}
+              subtitle={<span>{actors[movie.bond].name}</span>}
               actionIcon={
                 <IconButton className={classes.icon}>
                   <InfoIcon />
@@ -67,4 +68,4 @@ const mapStateToProps = (state, ownProps) => {
     actors: state.actors,
   }
 }
-export default connect(mapStateToProps)(AllMovies)
+export default connect(mapStateToProps, { movieSelected })(AllMovies)

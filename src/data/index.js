@@ -108,7 +108,7 @@ export const movies = [
     bond: 'j1',
     number: 7,
     img: `https://m.media-amazon.com/images/M/MV5BMTM0MDI2MzYzOF5BMl5BanBnXkFtZTcwNDY4NTMzNA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
-    imgLarge: `https://m.media-amazon.com/images/M/MV5BMjQwZTBkNmItZTAwYi00OGJjLTllMjQtNzI4ZjRhYmRjMDZlXkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_SY1000_CR0,0,753,1000_AL_.jpg`,
+    imgLarge: `https://m.media-amazon.com/images/M/MV5BMTM0MDI2MzYzOF5BMl5BanBnXkFtZTcwNDY4NTMzNA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
   {
     id: 'j3_1',

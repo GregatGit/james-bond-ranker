@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   },
   gridList: {
     width: 500,
-    height: 750,
+    height: 850,
   },
   gridListTitleBar: {
     opacity: 0,

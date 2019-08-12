@@ -5,7 +5,7 @@ const MovieChosen = ({chosen}) => {
   return (
     <div>
       {(typeof chosen === 'string') ? chosen : (
-        <img src={imgLarge} alt={title} />
+        <img style={{maxWidth: "100%"}} src={imgLarge} alt={title} />
       ) }
     </div>
   )

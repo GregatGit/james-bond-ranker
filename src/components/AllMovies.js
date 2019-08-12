@@ -22,6 +22,8 @@ const useStyles = makeStyles(theme => ({
     height: window.innerHeight / 100 * 70,
   },
   gridListTitleBar: {
+    width: 130,
+    marginLeft: 54,
     opacity: 0,
     '&:hover': {
       opacity: 1

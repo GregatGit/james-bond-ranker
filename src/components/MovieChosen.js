@@ -1,5 +1,5 @@
-import React from 'react'
-import { makeStyles } from '@material-ui/core/'
+import React, { useState, useEffect } from 'react'
+import { makeStyles, Fade } from '@material-ui/core/'
 
 const useStyles = makeStyles(theme => ({
   imgLarge: {
@@ -10,15 +10,26 @@ const useStyles = makeStyles(theme => ({
 
 const MovieChosen = ({ chosen }) => {
   const styles = useStyles()
+  const [display, setDisplay] = useState('...loading')
   const { imgLarge, title } = chosen
-  const maxH = (window.innerHeight / 100) * 90
+  
+  useEffect(() => {
+    setDisplay('...loading')
+    setTimeout(() => {
+      setDisplay(displayMovie(imgLarge, title))
+    }, 1);
+  }, [chosen])
+  
+  function displayMovie(img, title) {
+    return (
+      <Fade in={true} timeout={{ enter: 1500, exit: 1000 }}>
+        <img className={styles.imgLarge} src={img} alt={title} />
+      </Fade>
+    )
+  }
   return (
     <div>
-      {typeof chosen === 'string' ? (
-        chosen
-      ) : (
-        <img className={styles.imgLarge} src={imgLarge} alt={title} />
-      )}
+      {typeof chosen === 'string' ? chosen : display}
     </div>
   )
 }

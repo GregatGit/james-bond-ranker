@@ -144,7 +144,7 @@ export const movies = [
     bond: 'j3',
     number: 11,
     img: `https://m.media-amazon.com/images/M/MV5BMjQyMjUyNzY4MF5BMl5BanBnXkFtZTcwNzIyMzY0NA@@._V1_UX182_CR0,0,182,268_AL_.jpg`,
-    imgLarge: `https://m.media-amazon.com/images/M/MV5BYzUzNjFjYjQtZDE1ZS00ZDczLTgyYTAtMDE1OGZjNzJlOTk4XkEyXkFqcGdeQXVyODIyOTEyMzY@._V1_SY1000_CR0,0,736,1000_AL_.jpg`,
+    imgLarge: `https://m.media-amazon.com/images/M/MV5BMjQyMjUyNzY4MF5BMl5BanBnXkFtZTcwNzIyMzY0NA@@._V1_SY1000_CR0,0,666,1000_AL_.jpg`,
   },
   {
     id: 'j3_5',

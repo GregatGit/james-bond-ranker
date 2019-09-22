@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { makeStyles, Fade } from '@material-ui/core/'
+import { makeStyles, Zoom } from '@material-ui/core/'
 
 const useStyles = makeStyles(theme => ({
   imgLarge: {
@@ -22,9 +22,9 @@ const MovieChosen = ({ chosen }) => {
   
   function displayMovie(img, title) {
     return (
-      <Fade in={true} timeout={{ enter: 1500, exit: 1000 }}>
+      <Zoom in timeout={{ enter: 1500, exit: 1000 }}>
         <img className={styles.imgLarge} src={img} alt={title} />
-      </Fade>
+      </Zoom>
     )
   }
   return (
